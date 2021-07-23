@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head> 
+<body>
+ <fieldset>
+     <form method="get" action="simpleform.html" class = ".wufoo">
+    
+        <h1>Order Form</h1>
+        <p>Bạn muốn mua loại nào?</p>
+        <select>
+            <option value = "  ">nhỏ</option>
+            <option>trung bình</option>
+            <option>to</option>
+        </select>
+        <p>How many would you like to order?</p>
+        <input type="radio" name="rd"/> 20000 <br/>
+        <input type="radio" name="rd"/> 50000<br/>
+        <input type="radio" name="rd"/> 70000 <br/>
+
+        <p>Name <span style="color: red">*</span> </p>
+        <input type = "text" name="firstname" placeholder="FirstName" size="15"/>
+        <input type = "text" name="lastname" placeholder="LastName" size="15"/>
+        <p>Email</p>
+        <input type = "email" name="email" size="35"/>
+        <p>Phone Number</p>
+        <input type = "text" name="phone1" size="5"/> -
+        <input type = "text" name="phone2" size="5"/> -
+        <input type = "text" name="phone3" size="5"/>
+
+        <p><input type = "button" name="btSubmit" value="Submit"/></p>
+       
+    </form>
+ </fieldset>
+</body>
+</html>
