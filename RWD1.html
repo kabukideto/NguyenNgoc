@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin:0px; padding:0px; box-sizing:border-box; font-family: arial, helvetical, sans-serif;}
+/*===mobile===*/
+#main {
+	width: 100%;
+	min-height: 300px;
+	background: linear-gradient(#717670,white);
+	
+}
+#logo {
+	width: 100%;
+	height: 30px;
+	background: lightblue;
+}
+.logo {
+	width: 75%;
+	line-height: 30px;
+	text-align: center;
+	float: left;
+}
+#login {
+	width: 25%;
+	line-height: 30px;
+	float: right;
+}
+#login a {
+	text-decoration: none;
+}
+#logo::after, header::after{
+	content:"";
+	clear: both;
+	display: table;
+}
+nav>ul {
+	width: 100%;	
+	height: 30px;
+	background: black;
+}
+nav ul li {
+	list-style: none;
+	width: 25%;
+	line-height: 30px;
+	float: left;
+	text-align: center;
+	position: relative;
+}
+nav ul li a {
+	text-decoration: none;
+	color: white;
+}
+nav ul li:hover {
+	background: grey;
+
+}
+nav ul li:hover a {
+	color: lightblue;
+}
+nav li ul {
+	position: absolute;
+	width: 100%;
+}
+nav li li {
+	float:none;
+	/*display: none;*/
+	visibility: hidden;
+	width: 100%;
+	background: grey;
+	margin-top: 2px;
+}
+nav li:hover li {
+	/*display: block;*/
+	visibility: visible;
+}
+#container {
+	width: 100%;
+	min-height: 100px;
+}
+#left {
+	width: 100%;
+}
+#left nav {
+		margin-top: 20px;
+	}
+#left a {
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	width: 100%;
+	margin-bottom: 10px;
+}
+#content {
+	width: 100%;
+	min-height: 100px;
+	text-align: justify;
+	line-height: 20px;
+	padding: 10px;
+}
+#content h1, #content h2 {
+	margin: 10px 0px;
+}
+aside {
+	width: 100%;
+	min-height: 100px;
+}
+article {
+	width: 100%;
+	line-height: 100px;
+	margin-top: 20px;
+}
+article p {
+	width: 80%;
+	height: 100px;
+	display: block;
+	border: 1px solid blue;
+	border-radius: 10px;
+	margin: auto;
+	text-align: center;
+}
+footer {
+	width: 100%;
+	text-align: center;
+	color: green;
+}
+/*===tables===*/
+@media only screen and (min-width: 600px){
+	#logo {
+		width: 16.66%;
+		float: left;
+		position: relative;
+	}
+	#login {
+		position: absolute;
+		left: 550%;
+	}
+	#login a {
+		color: red;
+	}
+	nav>ul {
+		width: 83.33%;
+		float: left;
+	}
+	nav>ul>li {
+		width: 20%;
+	}
+	#left {
+		width: 25%;
+		float: left;
+	}	
+	#content {
+		width: 75%;
+		float: left;
+	}
+	article {
+		width: 50%;
+		float: left;
+	}
+}
+/*===desktop===*/
+@media only screen and (min-width: 768px){
+	nav>ul>li {
+		width: 10%;
+	}
+	#left {
+		width: 25%;
+		float: left;	
+	}
+	#content {
+		width: 50%;
+		float: left;		
+	}
+	aside {
+		width: 25%;
+		float: left;
+	}
+	article {
+		width: 100%;
+		float: none;
+	}
+	#container:after {
+		content: "";
+		clear: both;
+		display: table;
+	}
+}
+    </style>
+</head>
+<body>
+    <div id="main">
+		<header>
+			<nav>
+				<div id="logo">
+					<div class="logo">
+						 LOGO
+					</div>
+					<div id="login">
+						<a href="#">Login</a>
+					</div>
+				</div>
+				<ul>
+					<li><a href="#">Home</a>
+						<ul>
+							<li><a href="#">Home1</a></li>
+							<li><a href="#">Home2</a></li>
+							<li><a href="#">Home3</a></li>
+						</ul>
+
+					</li>
+					<li><a href="#">About</a>
+						<ul>
+							<li><a href="#">About1</a></li>
+							<li><a href="#">About2</a></li>
+							<li><a href="#">About3</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Projects</a>
+						<ul>
+							<li><a href="#">Projects1</a></li>
+							<li><a href="#">Projects2</a></li>
+							<li><a href="#">Projects3</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Contact</a>
+						<ul>
+							<li><a href="#">Adress</a></li>
+							<li><a href="#">Us</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<div id="container">
+			<div id="left">
+				<nav>
+					<a href="#">Link</a>
+					<a href="#">Link</a>
+					<a href="#">Link</a>
+				</nav>
+			</div>
+			<div id="content">
+				<section>
+					<h1>Welcome</h1>
+					<p>Lorem eIpsum is simply dummy text of the priting and typeseeint industry. Lorem Ipsum has been the industry's standsard dummy text ever since the 1500s, when an unkown printer took a gally of type and scrambled it make a type secimen book.</p>
+				</section>
+				<hr>
+				<section>
+					<h2>Test</h2>
+					<p>Lorem eIpsum is simply dummy text of the priting and typeseeint industry.</p>
+				</section>
+			</div>
+			<aside>
+				<article>
+					<p>ADS</p>
+				</article>
+				<article>
+					<p>ADS</p>
+				</article>
+			</aside>
+		</div>
+		<footer>
+			<p>Footer Text</p>
+		</footer>
+	</div>
+</body>
+</html>
